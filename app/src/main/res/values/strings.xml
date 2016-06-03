@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TravelPix</string>
+    <string name="action_settings">Settings</string>
+    <string name="trave_description_label">Description</string>
+    <string name="travel_description_hint">Enter a description for location</string>
+    <string name="travel_details_label">Details</string>
+    <string name="visit_again_label">Visit Again</string>
+    <string name="choose_receiver_text">Select a contact</string>
+    <string name="send_travelpix_text">Send to a friend</string>
+</resources>
