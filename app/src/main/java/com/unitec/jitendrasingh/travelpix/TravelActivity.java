@@ -4,28 +4,19 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import java.util.zip.Inflater;
-
-/**
- * Created by jitus_000 on 3/06/2016.
- */
-public class SingleFragmentActivity extends FragmentActivity{
+public class TravelActivity extends FragmentActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_activity);
+        setContentView(R.layout.activity_travel);
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment fragment = fragmentManager.findFragmentById(R.id.fragment_container);
         if(fragment == null){
-            fragment = new TravelPixFragment();
+            fragment = new TravelFragment();
             fragmentManager.beginTransaction().add(R.id.fragment_container,fragment).commit();
         }
     }
-
 
 }
