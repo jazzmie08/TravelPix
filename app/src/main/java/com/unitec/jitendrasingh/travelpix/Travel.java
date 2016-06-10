@@ -10,7 +10,7 @@ public class Travel {
     private String mDescription;
     private UUID mId;
     private float mRating;
-    private boolean mSolved;
+    private boolean mVisitAgain;
     private Date mDate;
 
     public Travel(){
@@ -26,12 +26,12 @@ public class Travel {
         return mDate;
     }
 
-    public boolean isSolved(){
-        return mSolved;
+    public boolean isVisitAgain(){
+        return mVisitAgain;
     }
 
-    public void setSolved(boolean solved){
-        mSolved = solved;
+    public void setVisitAgain(boolean visitAgain){
+        mVisitAgain = visitAgain;
     }
 
     public float getRating(){
@@ -40,5 +40,17 @@ public class Travel {
 
     public void setRating(float rating){
         mRating = rating;
+    }
+
+    public void setDescription(String description){
+        mDescription = description;
+    }
+
+    public String getDescription(){
+        return mDescription;
+    }
+
+    public UUID getId(){
+        return mId;
     }
 }

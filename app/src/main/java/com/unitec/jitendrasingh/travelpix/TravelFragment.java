@@ -32,7 +32,7 @@ public class TravelFragment extends Fragment{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-
+        //Setup UI and get reference to View Object after inflater inflates the layout
        View view =  UIWidgetReferenceSetUp(inflater,container);
 
 
@@ -77,13 +77,13 @@ public class TravelFragment extends Fragment{
         mVisitAgainCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                mTravel.setSolved(isChecked);
+                mTravel.setVisitAgain(isChecked);
             }
         });
 
         return view;
     }
-
+    //Inflating the view and setting up the UI widgets
     public View UIWidgetReferenceSetUp(LayoutInflater inflater, ViewGroup container){
         View view = inflater.inflate(R.layout.fragment_travel,container,false);
         mSendButton = (Button)view.findViewById(R.id.travelpix_send);
